@@ -1,0 +1,84 @@
+<!--
+      Proyecto sobre jQuery y Ajax
+      Autor: Najera Flores Brenda
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Proyecto</title>
+		<script type="text/javascript" src="../webroot/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="../webroot/js/proyecto.js"></script>
+    <script type="text/javascript" src="../webroot/js/popper.min.js"></script>
+		<link href="../webroot/css/bootstrap.min.css" rel="stylesheet" media="screen"> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+    <center><h1>POST AJAX</h1></center>
+		<div id="id_contenedor" class="container">
+			
+
+			<div id="post"></div>
+
+			<!-- Modal que contiene los datos de un post -->
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Contenido del modal -->
+                <div class="modal-content modal-lg">
+                  <!-- Cabecera del modal -->
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="header"></h4>
+                  </div>
+                  <!-- Cuerpo del modal -->
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                        
+                        <div id="divModal" class="col-md-8 modal-lg"></div>
+                        <input id="boton" type="button" value="Cargar mas comentarios"/>
+
+                    </div>
+                  </div>
+                  <!-- Pie o parte inferior del modal -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+      <!-- Modal que contiene los datos de un usuario -->
+            <div id="myModalUsu" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Contenido del modal -->
+                <div class="modal-content modal-lg">
+                  <!-- Cabecera del modal -->
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="header"></h4>
+                  </div>
+                  <!-- Cuerpo del modal -->
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                        
+                        <div id="divModalUsu" class="col-md-8 modal-lg"></div>
+                        <div id="formModal" class="col-md-8 modal-lg"></div>
+                        <button id="botonAgregar" class="btn-primary btn" type="button">Agregar</button>
+
+                    </div>
+                  </div>
+                  <!-- Pie o parte inferior del modal -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <input id="btnPosts" class="btn btn-primary" type="button" value="Cargar mas posts"/>
+		</div>
+	</body>
+</html>
